@@ -10,9 +10,9 @@ class RegistroModel
         $this->database = $database;
     }
 
-    public function registrarEmpleado($usuario, $password, $dni, $f_nac, $id_rol){
-        $result = $this->database->queryInsertar("insert into empleado(usuario,password,dni,f_nac,id_rol)
-			        VALUES('$usuario', '$password', $dni, $f_nac, $id_rol)");
+    public function registrarEmpleado($usuario, $password, $dni, $f_nac){
+        $result = $this->database->ejecutarQuery("insert into empleado(usuario,password,dni,f_nac)
+			        VALUES('$usuario', '$password', $dni, $f_nac)");
          return $result;
            }
 

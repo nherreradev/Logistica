@@ -19,6 +19,8 @@ class AdministradorModel
         return $this->db->query("delete from empleado where id_usuario = '$idUsuario'");
     }
 
+    
+
 
 
 

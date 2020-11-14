@@ -25,9 +25,9 @@ class RegistroController
         $password = $_POST["password"];
         $dni = $_POST["dni"];
         $f_nac = $_POST["f_nac"];
-        $id_rol = $_POST["id_rol"];
 
-        $fueRegistrado = $this->loginModel->registrarEmpleado($usuario, $password, $dni, $f_nac, $id_rol);
+
+        $fueRegistrado = $this->loginModel->registrarEmpleado($usuario, $password, $dni, $f_nac);
 
         if($fueRegistrado){
             echo $this->renderer->render("./view/loginCorrectoView.php");
