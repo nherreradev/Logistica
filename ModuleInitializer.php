@@ -18,39 +18,9 @@ class ModuleInitializer
         $this->database = Database::createDatabaseFromConfig($this->config);
     }
 
-    public function createPresentacionesController()
-    {
-        include_once("model/PresentacionesModel.php");
-        include_once("controller/PresentacionesController.php");
-
-        $model = new PresentacionesModel($this->database);
-        return new PresentacionesController($model, $this->renderer);
-    }
-
-    public function createCancionesController()
-    {
-        include_once("model/CancionesModel.php");
-        include_once("controller/CancionesController.php");
-
-        $model = new CancionesModel($this->database);
-        return new CancionesController($model, $this->renderer);
-    }
-
-    public function createQuieroSerParteController()
-    {
-        include_once("controller/QuieroSerParteController.php");
-        return new QuieroSerParteController($this->renderer);
-    }
-
-    public function createLaBandaController()
-    {
-        include_once("controller/LaBandaController.php");
-        return new LaBandaController($this->renderer);
-    }
-
     public function createDefaultController()
     {
-        return $this->createLaBandaController();
+        return $this->createLoginController();
     }
 
     public function createLoginController()
