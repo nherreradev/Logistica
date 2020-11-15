@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="833d0584-4092-44d5-9fcb-9146a9ae287e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModuleInitializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/ModuleInitializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CancionesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/LaBandaController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/PresentacionesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/QuieroSerParteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/CancionesModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/PresentacionesModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/cancionView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/cancionesView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/labandaView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/AdministradorModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/AdministradorModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginCorrectoView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginIncorrectoView.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/view/partial/header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/partial/header.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/presentacionesView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/quiereSerParteView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/quieroSerParteView.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +46,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1kIb8wBAktEk9L98y5MVaD7vm91" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605390897295</updated>
       <workItem from="1605390898378" duration="3796000" />
-      <workItem from="1605405146059" duration="642000" />
+      <workItem from="1605405146059" duration="6472000" />
     </task>
     <servers />
   </component>
@@ -108,10 +120,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392500155" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605405738361">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605405738361" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1605392292547">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392292547" />
+    <state x="510" y="87" key="NewPhpClassDialog" timestamp="1605406448683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="510" y="87" key="NewPhpClassDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605406448683" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605407499423">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605407499423" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1605392300250">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -120,6 +144,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="512" y="241" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392485253" />
+    <state x="-8" y="-720" width="597" height="696" maximized="true" key="dock-window-1" timestamp="1605410296464">
+      <screen x="0" y="-720" width="1280" height="680" />
+    </state>
+    <state x="-8" y="-720" width="597" height="696" maximized="true" key="dock-window-1/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605410296464" />
+    <state x="576" y="-720" width="711" height="687" key="dock-window-2" timestamp="1605410296465">
+      <screen x="0" y="-720" width="1280" height="680" />
+    </state>
+    <state x="576" y="-720" width="711" height="687" key="dock-window-2/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605410296465" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605392375878">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
