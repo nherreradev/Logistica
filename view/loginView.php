@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login system</title>
-
-    <link href="/css/icon.css"  rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/third-party/css/style.css">
+{{> header}}
     <style>
         body{
             background-color: #b0a9a9;
@@ -34,7 +24,8 @@
             margin-top: 1em;
         }
     </style>
-</head>
+</header>
+
 
 <div class="row login">
     <div class="col s12 m4 offset-m4">
@@ -45,7 +36,7 @@
             <form method="POST" action="/login/procesarFormulario">
                 <div class="card-content">
                     <div class="form-field">
-                        <label for="username">Ingrese Usuario:</label>
+                        <label for="usuario">Ingrese Usuario:</label>
                         <input type="text" id="usuario" name="usuario" class="white-text">
                     </div><br>
 
@@ -77,7 +68,6 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{{> footer}}
 
 </html>

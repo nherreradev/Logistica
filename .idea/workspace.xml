@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,14 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="833d0584-4092-44d5-9fcb-9146a9ae287e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModuleInitializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/ModuleInitializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AdministradorModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/AdministradorModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/loginCorrectoView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/loginIncorrectoView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/partial/header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/partial/header.mustache" afterDir="false" />
+    <list default="true" id="14f10b9e-f21c-46bf-a4cc-0132aa98a104" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/chofer/mostrarFormularioCargaDeDatosDelViajeView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/chofer/mostrarFormularioCargaDeDatosDelViajeView.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +37,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpServers">
-    <servers>
-      <server host="localhost" id="999284bf-08ed-4f47-a5a1-c487e620ce5e" name="Logistica" />
-    </servers>
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1kIb8wBAktEk9L98y5MVaD7vm91" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="1lIwxMRoOk1x2E4dYDO4KYlLTDj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -55,33 +47,36 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php/ext/php_xdebug.dll" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Logistica" start_url="/htdocs/index.php">
-      <method v="2">
-        <option name="FtpUpload" enabled="true">
-          <server_id>50db7fc0-8fd8-4cff-9672-43b235e23572</server_id>
-          <server_name>Logistica</server_name>
-          <group_name />
-          <path>C:\xampp\htdocs</path>
-        </option>
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="833d0584-4092-44d5-9fcb-9146a9ae287e" name="Default Changelist" comment="" />
-      <created>1605390897295</created>
+      <changelist id="14f10b9e-f21c-46bf-a4cc-0132aa98a104" name="Default Changelist" comment="" />
+      <created>1607298164551</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605390897295</updated>
-      <workItem from="1605390898378" duration="3796000" />
-      <workItem from="1605405146059" duration="6472000" />
+      <updated>1607298164551</updated>
+      <workItem from="1607298166615" duration="769000" />
+      <workItem from="1607360683840" duration="307000" />
+      <workItem from="1607363212597" duration="1345000" />
+      <workItem from="1607386551124" duration="1604000" />
+      <workItem from="1607423579306" duration="317000" />
+      <workItem from="1607423928692" duration="15577000" />
+      <workItem from="1607462496815" duration="114000" />
+      <workItem from="1607462635873" duration="2191000" />
+      <workItem from="1607517211689" duration="9193000" />
+      <workItem from="1607634030276" duration="6340000" />
+      <workItem from="1607729514043" duration="6539000" />
+      <workItem from="1607741029718" duration="1051000" />
+      <workItem from="1607775864489" duration="15177000" />
+      <workItem from="1607868575495" duration="9572000" />
+      <workItem from="1607976914082" duration="3390000" />
+      <workItem from="1608034475244" duration="10972000" />
+      <workItem from="1608073711190" duration="1390000" />
     </task>
     <servers />
   </component>
@@ -98,63 +93,130 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se agrega modulo encargado de taller, se modifica tambien BD." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrega modulo encargado de taller, se modifica tambien BD." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="263" y="19" key="#CLI_Interpreters" timestamp="1605392097618">
+    <state x="24" y="0" width="1309" height="618" key="DiffContextDialog" timestamp="1608035847611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="19" key="#CLI_Interpreters/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392097618" />
-    <state x="275" y="29" key="#Deployment" timestamp="1605392473045">
+    <state x="24" y="0" width="1309" height="618" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1608035847611" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607976966986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="29" key="#Deployment/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392473045" />
-    <state x="390" y="7" key="#PHP" timestamp="1605390924314">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607976966986" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607741308173" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607777283616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1607298125930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="7" key="#PHP/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605390924314" />
-    <state x="391" y="100" key="#Servers" timestamp="1605391737904">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125930" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1607298125930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="100" key="#Servers/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605391737904" />
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605392500155">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125930" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1607298125930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392500155" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605405738361">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125930" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1607298125930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605405738361" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1605392292547">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125930" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1607298125937">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392292547" />
-    <state x="510" y="87" key="NewPhpClassDialog" timestamp="1605406448683">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125937" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1607298125935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="510" y="87" key="NewPhpClassDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605406448683" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605407499423">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125935" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1607298125935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605407499423" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1605392300250">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125935" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1607298125936">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392300250" />
-    <state x="512" y="241" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1605392485253">
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607298125936" />
+    <state x="-1280" y="62" width="1280" height="618" key="MergeDialog" timestamp="1607869034382">
+      <screen x="-1280" y="45" width="1280" height="680" />
+    </state>
+    <state x="-1280" y="62" width="1280" height="618" key="MergeDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607869034382" />
+    <state x="321" y="125" key="MultipleFileMergeDialog" timestamp="1607869034390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="512" y="241" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392485253" />
-    <state x="-8" y="-720" width="597" height="696" maximized="true" key="dock-window-1" timestamp="1605410296464">
+    <state x="321" y="125" key="MultipleFileMergeDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607869034390" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1607455485215">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607455485215" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1607363409270">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607363409270" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607425999970">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607425999970" />
+    <state x="-999" y="140" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1607868909886">
+      <screen x="-1280" y="45" width="1280" height="680" />
+    </state>
+    <state x="-999" y="140" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607868909886" />
+    <state x="457" y="-466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607425999404">
       <screen x="0" y="-720" width="1280" height="680" />
     </state>
-    <state x="-8" y="-720" width="597" height="696" maximized="true" key="dock-window-1/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605410296464" />
-    <state x="576" y="-720" width="711" height="687" key="dock-window-2" timestamp="1605410296465">
+    <state x="457" y="-466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607425999404" />
+    <state x="302" y="-668" width="932" height="715" maximized="true" key="dock-window-1" timestamp="1607977381863">
       <screen x="0" y="-720" width="1280" height="680" />
     </state>
-    <state x="576" y="-720" width="711" height="687" key="dock-window-2/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605410296465" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605392375878">
+    <state x="-1555" y="26" width="1214" height="668" key="dock-window-1/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@-1280.45.1280.680" timestamp="1607537640402" />
+    <state x="302" y="-668" width="932" height="715" maximized="true" key="dock-window-1/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607977381863" />
+    <state x="-1164" y="45" width="1035" height="715" maximized="true" key="dock-window-1/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607741324484" />
+    <state x="-1157" y="63" width="932" height="715" maximized="true" key="dock-window-2" timestamp="1607984651020">
+      <screen x="-1280" y="45" width="1280" height="680" />
+    </state>
+    <state x="-1157" y="63" width="932" height="715" maximized="true" key="dock-window-2/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607984651020" />
+    <state x="50" y="153" width="1035" height="715" key="dock-window-2/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607731584103" />
+    <state x="47" y="81" width="1296" height="715" key="dock-window-3" timestamp="1607986442875">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1605392375878" />
+    <state x="47" y="81" width="1296" height="715" key="dock-window-3/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607986442875" />
+    <state x="48" y="-720" width="956" height="659" maximized="true" key="dock-window-3/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607731584103" />
+    <state x="0" y="0" width="1384" height="766" key="dock-window-4" timestamp="1608034777807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1280" y="45" width="1296" height="715" key="dock-window-4/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607986442875" />
+    <state x="0" y="0" width="1384" height="766" key="dock-window-4/0.0.1366.728@0.0.1366.728" timestamp="1608034777807" />
+    <state x="180" y="-720" width="932" height="715" maximized="true" key="dock-window-5" timestamp="1608034777808">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="80" y="284" width="1001" height="715" maximized="true" key="dock-window-5/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@-1280.45.1280.680" timestamp="1607906925063" />
+    <state x="80" y="284" width="1001" height="715" maximized="true" key="dock-window-5/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.-720.1280.680" timestamp="1607908563815" />
+    <state x="180" y="-720" width="932" height="715" maximized="true" key="dock-window-5/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607986442876" />
+    <state x="238" y="-720" width="1001" height="715" maximized="true" key="dock-window-6" timestamp="1607900721324">
+      <screen x="0" y="-720" width="1280" height="680" />
+    </state>
+    <state x="238" y="-720" width="1001" height="715" maximized="true" key="dock-window-6/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@-1280.45.1280.680" timestamp="1607900721324" />
+    <state x="0" y="59" width="1253" height="667" maximized="true" key="dock-window-7" timestamp="1607900721324">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="59" width="1253" height="667" maximized="true" key="dock-window-7/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@-1280.45.1280.680" timestamp="1607900721324" />
+    <state x="-1280" y="83" width="1296" height="715" key="dock-window-8" timestamp="1607909156655">
+      <screen x="-1280" y="45" width="1280" height="680" />
+    </state>
+    <state x="-1280" y="83" width="1296" height="715" key="dock-window-8/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607909156655" />
+    <state x="0" y="-668" width="1296" height="715" key="dock-window-9" timestamp="1607909156655">
+      <screen x="0" y="-720" width="1280" height="680" />
+    </state>
+    <state x="0" y="-668" width="1296" height="715" key="dock-window-9/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607909156655" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1607735381414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1280.45.1280.680/0.-720.1280.680@0.0.1366.728" timestamp="1607529492980" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/0.-720.1280.680/-1280.45.1280.680@0.0.1366.728" timestamp="1607735381414" />
   </component>
 </project>

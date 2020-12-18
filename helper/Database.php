@@ -26,6 +26,16 @@ class Database{
         mysqli_close($this->connexion);
     }
 
+    public function executeQuery($sql){
+        $resultQuery = mysqli_query($this->connexion, $sql);
+        if(strpos(strtoupper($sql),"SELECT")){
+            $result = mysqli_fetch_all($resultQuery, MYSQLI_ASSOC);
+        }else{
+            $result = $resultQuery;
+        }
+        return $result;
+    }
+
     public static function createDatabaseFromConfig(Config $config){
         return new Database(
             $config->get( "database","servername"),

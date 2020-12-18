@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Logistica" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="logistica" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="Logistica">
+      <paths name="logistica">
         <serverdata>
           <mappings>
-            <mapping deploy="htdocs" local="$PROJECT_DIR$" web="/htdocs" />
+            <mapping deploy="\" local="$PROJECT_DIR$" web="\htdocs" />
           </mappings>
         </serverdata>
       </paths>

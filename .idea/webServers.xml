@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="50db7fc0-8fd8-4cff-9672-43b235e23572" name="Logistica" url="http://localhost">
+      <webServer id="5ffd9fae-4543-48d7-861d-a530299745d4" name="logistica" url="http://localhost">
         <fileTransfer mountedRoot="C:\xampp\htdocs" accessType="MOUNT" port="0" />
       </webServer>
     </option>

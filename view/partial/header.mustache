@@ -1,25 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>La banda</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/third-party/css/style.css" type="text/css">
+</head>
 <body>
+<header>
 
-<!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <form method="POST" action="/Administrador/traerUsuariosSinRoles">
+{{#chofer}}
 
-            <button type="submit" class="btn-large black accent-4">Listar usuarios sin rol</button>
-        </form>
+        <style>
+            body {
+                background-color: #b0a9a9;
+                color: #fff;
+            }
+            nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+                margin: 0px 10px 0px 0px;
+                padding: 0px 5px 0px 5px;
+            }
+            .dropdown-content li>a>i{
+                margin: 0;
+            }
+            .dropdown-content li>a, .dropdown-content li>span{
+                padding: 15px 0px 20px 5px;
+            }
 
-    </div>
-</div>
+            .login {
+                margin-top: 100px;
+            }
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+            .login .card {
+                background: rgba(0, 0, 0, .6);
+            }
+
+            .login label {
+                font-size: 16px;
+                color: #ccc;
+            }
+            nav .brand-logo{
+                font-size: 1.5rem;
+            }
+
+            .login input {
+                font-size: 22px !important;
+            }
+
+            .login button:hover {
+                padding: 0px 40px;
+            }
+
+            .login p {
+                margin-top: 1em;
+            }
+            /* This container class will allow a table to scroll horizontally on smaller screens. */
+            .hscroll {
+                overflow-x: auto; /* Horizontal */
+            }
+
+        </style>
+
+        <nav>
+            <div style="padding: 0 10px !important" class="nav-wrapper black">
+                <a href="/chofer" class="brand-logo">Chofer</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="btn-small orange darken-2" href="/chofer/mostrarFormularioCargaCombustible">Escanear Codigo QR</a></li>
+                    <li><a class="btn-small orange darken-2" href="/chofer/mostrarLasProformasPendientesDeFinalizar">Listar viajes pendientes</a></li>
+                    <li><a class="btn-small red darken-2" href="/chofer/cerrarSesion">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav black" id="mobile-demo">
+            <li><a class="btn-small orange darken-2" href="/chofer/mostrarFormularioCargaCombustible">Escanear CodigoQR</a></li>
+            <li><a class="btn-small orange darken-2" href="/chofer/mostrarLasProformasPendientesDeFinalizar">Listar viajes pendientes</a></li>
+            <li><a class="btn-small red darken-2" href="/chofer/cerrarSesion">Cerrar sesión</a></li>
+        </ul>
+
+    </header>
+
+{{/chofer}}
+
+{{#supervisor}}
+
+    <style>
+        body {
+            background-color: #b0a9a9;
+            color: #fff;
+        }
+        nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+            margin: 0px 10px 0px 0px;
+            padding: 0px 5px 0px 5px;
+        }
+        .dropdown-content li>a>i{
+            margin: 0;
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+            padding: 15px 0px 20px 5px;
+        }
+        .collection.with-header .collection-header {
+            background: rgba(0, 0, 0, .6);
+            border-bottom: none;
+        }
+
+        .collection.with-header .collection-item {
+            background: rgba(0, 0, 0, .6);
+            border-bottom: none;
+        }
+
+        .collection {
+            border: 1px solid #F4A550;
+        }
+
+        .login .card {
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .login label {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        .login input {
+            font-size: 22px !important;
+        }
+
+        .login button:hover {
+            padding: 0px 40px;
+        }
+
+        .select-wrapper input.select-dropdown {
+            color: white;
+
+        }
+        nav .brand-logo{
+            font-size: 1.5rem;
+        }
+
+        .select-wrapper input.select-dropdown:focus {
+            border-bottom: 1px solid #ff6d00;
+        }
+
+        .dropdown-content li > a,
+        .dropdown-content li > span {
+            font-size: 1rem;
+            color: #000000;
+        }
+
+        .dropdown-nested {
+            overflow-y: visible;
+        }
+
+        .dropdown-content .dropdown-content {
+            /* left: 100%;*/
+            /*drop hacia la izquierda*/
+            left: -100%;
+            /*drop hacia la derecha*/
+            /* left: auto;*/
+            /*drop hacia el centro*/
+        }
+
+        .dropdown-content .mobile {
+            /* left: 100%;*/
+            /*drop hacia la izquierda*/
+            left: 0%;
+            /*drop hacia la derecha*/
+            /* left: auto;*/
+            /*drop hacia el centro*/
+        }
+        /* This container class will allow a table to scroll horizontally on smaller screens. */
+        .hscroll {
+            overflow-x: auto; /* Horizontal */
+        }
+    </style>
+
+    <nav>
+        <div style="padding: 0 10px !important" class="nav-wrapper black">
+            <a href="/supervisor" class="brand-logo">Supervisor</a>
+            <!-- Disparador(MENU HAMBURGUESA) del SideNav Mobile -->
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <!-- Disparador del dropdown ESCRITORIO -->
+                <li><a class="btn-small grey darken-2" href="/supervisor/traerChoferesQueNoTienenLicenciaValidada">Validar
+                    licencia chofer</a></li>
+                <li><a class="dropdown-trigger2 btn-small yellow darken-2" href="#!" data-target="dropdowncelulares">
+                    Celular<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger2 btn-small  blue darken-2" href="#!" data-target="dropdownequipos">Equipos<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger2 btn-small  orange darken-2" href="#!" data-target="dropdownclientes">Clientes<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger2 btn-small  green darken-2" href="#!" data-target="dropdownproforma">Proforma<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="btn-small  red darken-2" href="/supervisor/cerrarSesion">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Estructura para Menu Dropdown Escritorio-->
+
+
+    <ul id="dropdowncelulares" class="dropdown-content">
+        <li><a class="yellow darken-2 white-text" href="/supervisor/listarTodosLosCelulares">Listar</a></li>
+        <li><a class="yellow darken-2 white-text" href="/supervisor/cargarFormularioDeAltaACelular">Dar de alta</a></li>
+        <li><a class="yellow darken-2 white-text" href="/supervisor/mostrarCelularesSinAsignacionDeChofer">Asignar</a></li>
+    </ul>
+
+    <ul id="dropdownequipos" class="dropdown-content dropdown-nested">
+        <li><a class="sub blue darken-2 white-text" data-target="dropdownlistartractoresyarrastrados">Listar<i
+                class="material-icons right">arrow_right</i></a></li>
+        <li><a class="sub blue darken-2 white-text" data-target="dropdownaltatractoresyarrastrados">Alta<i
+                class="material-icons right">arrow_right</i></a></li>
+    </ul>
+
+
+    <ul id="dropdownlistartractoresyarrastrados" class="dropdown-content">
+        <li><a class="blue darken-2 white-text" href="/supervisor/listarTodosLosTractores">Listar tractores</a></li>
+        <li><a class="blue darken-2 white-text" href="/supervisor/listarTodosLosArrastrados">Listar arrastrados</a></li>
+    </ul>
+
+    <ul id="dropdownaltatractoresyarrastrados" class="dropdown-content">
+        <li><a class="blue darken-2 white-text" href="/supervisor/darAltaATractor">Dar de alta tractores</a></li>
+        <li><a class="blue darken-2 white-text" href="/supervisor/darAltaAArrastrado">Dar de alta arrastrados</a></li>
+    </ul>
+
+
+
+
+    <ul id="dropdownclientes" class="dropdown-content">
+        <li><a class="orange darken-2 white-text" href="/supervisor/listarTodosLosClientes">Listar</a></li>
+        <li><a class="orange darken-2 white-text" href="/supervisor/darAltaACliente">Dar de alta</a></li>
+        </li>
+
+    </ul>
+
+    <ul id="dropdownproforma" class="dropdown-content">
+        <li><a class="green darken-2 white-text" href="/proforma/mostrarProformas">Listar</a></li>
+        <li><a class="green darken-2 white-text" href="/proforma/mostrarFormularioProforma">Cargar proforma</a></li>
+
+    </ul>
+
+
+    <!-- Estructura para Menu Dropdown Mobile-->
+
+
+    <ul class="sidenav black" id="mobile-demo">
+        <li><a class="btn grey darken-2" href="/supervisor/traerChoferesQueNoTienenLicenciaValidada">Validar licencia
+            chofer</a></li>
+        <li><a class="dropdown-trigger2 btn yellow darken-2" href="#!" data-target="dropdowncelularesmobile">Celulares<i
+                class="material-icons white-text right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger2 btn blue darken-2" href="#!" data-target="dropdownequiposmobile">Equipos<i
+                class="material-icons white-text right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger2 btn orange darken-2" href="#!" data-target="dropdownclientesmobile">Clientes<i
+                class="material-icons white-text right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger2 btn green darken-2" href="#!" data-target="dropdownproformamobile">Proforma<i
+                class="material-icons white-text right">arrow_drop_down</i></a></li>
+        <li><a class="btn red darken-2" href="/supervisor/cerrarSesion">Cerrar sesión</a></li>
+    </ul>
+
+    <ul id="dropdowncelularesmobile" class="dropdown-content">
+        <li><a class="yellow darken-2 white-text" href="/supervisor/listarTodosLosCelulares">Listar</a></li>
+        <li><a class="yellow darken-2 white-text" href="/supervisor/cargarFormularioDeAltaACelular">Dar de alta</a></li>
+        <li><a class="yellow darken-2 white-text" href="/supervisor/mostrarCelularesSinAsignacionDeChofer">Asignar</a></li>
+    </ul>
+
+
+    <ul id="dropdownequiposmobile" class="dropdown-content dropdown-nested">
+        <li><a class="submobile blue darken-2 white-text" data-target="dropdownlistartractoresyarrastradosmobile">Listar<i
+                class="material-icons white-text right">arrow_drop_down</i></a></li>
+        <li><a class="submobile blue darken-2 white-text" data-target="dropdownaltatractoresyarrastradosmobile">Dar de
+            alta<i class="material-icons white-text right">arrow_drop_down</i></a></li>
+    </ul>
+
+
+    <ul id="dropdownlistartractoresyarrastradosmobile" class="dropdown-content mobile">
+        <li><a class="blue darken-2 white-text" href="/supervisor/listarTodosLosTractores">Listar tractores</a></li>
+        <li><a class="blue darken-2 white-text" href="/supervisor/listarTodosLosArrastrados">Listar arrastrados</a></li>
+    </ul>
+
+    <ul id="dropdownaltatractoresyarrastradosmobile" class="dropdown-content mobile">
+        <li><a class="blue darken-2 white-text" href="/supervisor/darAltaATractor">Dar de alta tractores</a></li>
+        <li><a class="blue darken-2 white-text" href="/supervisor/darAltaAArrastrado">Dar de alta arrastrados</a></li>
+    </ul>
+
+
+
+    <ul id="dropdownclientesmobile" class="dropdown-content">
+        <li><a class="orange darken-2 white-text" href="/supervisor/listarTodosLosClientes">Listar</a></li>
+        <li><a class="orange darken-2 white-text" href="/supervisor/darAltaACliente">Dar de alta</a></li>
+        </li>
+    </ul>
+    <ul id="dropdownproformamobile" class="dropdown-content">
+        <li><a class="green darken-2 white-text" href="/proforma/mostrarProformas">Listar</a></li>
+        <li><a class="green darken-2 white-text" href="/proforma/mostrarFormularioProforma">Cargar proforma</a></li>
+    </ul>
+
+
+    </header>
+
+{{/supervisor}}
+
+
+
+{{#administrador}}
+    <style>
+        body {
+            background-color: #b0a9a9;
+        }
+        nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+            margin: 0px 10px 0px 0px;
+            padding: 0px 5px 0px 5px;
+        }
+        .dropdown-content li>a>i{
+            margin: 0;
+        }
+        nav .brand-logo{
+            font-size: 1.5rem;
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+            padding: 15px 0px 20px 5px;
+        }
+
+        .select-wrapper input.select-dropdown{
+            color: white;
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+            color: #000  !important;
+        }
+        .select-wrapper input.select-dropdown:focus{
+            border-bottom: 1px solid #ff6d00;
+        }
+        /* This container class will allow a table to scroll horizontally on smaller screens. */
+        .hscroll {
+            overflow-x: auto; /* Horizontal */
+        }
+    </style>
+
+    <nav>
+        <div style="padding: 0 10px !important" class="nav-wrapper black">
+            <a href="/administrador" class="brand-logo">Administrador</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a  class="btn-small orange darken-2" href="/administrador/obtenerUsuariosSinRol">Asignar rol a usuarios sin rol</a></li>
+                <li><a  class="btn-small orange darken-2" href="/administrador/traerTodosLosUsuarios">Listar Usuarios</a></li>
+                <li><a  class="btn-small red darken-2" href="/administrador/cerrarSesion">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav black" id="mobile-demo">
+        <li><p class="white-text center-align orange darken-2">Control de usuarios</p ></li>
+        <li><a class="btn orange darken-2" href="/administrador/obtenerUsuariosSinRol">Asignar rol</a></li>
+        <li><a class="btn orange darken-2" href="/administrador/traerTodosLosUsuarios">Listar</a></li>
+        <li><a class="btn red darken-2" href="/administrador/cerrarSesion">Cerrar sesión</a></li>
+    </ul>
+
+    </header>
+{{/administrador}}
+
+{{#encargadoDeTaller}}
+
+    <style>
+        body {
+            background-color: #b0a9a9;
+        }
+        nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+            margin: 0px 10px 0px 0px;
+            padding: 0px 5px 0px 5px;
+        }
+        .dropdown-content li>a>i{
+            margin: 0;
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+            padding: 15px 0px 20px 5px;
+        }
+        nav .brand-logo{
+            font-size: 1.5rem;
+        }
+
+        .select-wrapper input.select-dropdown{
+            color: white;
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+            color: #000  !important;
+        }
+        .select-wrapper input.select-dropdown:focus{
+            border-bottom: 1px solid #ff6d00;
+        }
+        .collection.with-header .collection-header {
+            background: rgba(0, 0, 0, .6);
+            border-bottom: none;
+        }
+
+        .collection.with-header .collection-item {
+            background: rgba(0, 0, 0, .6);
+            border-bottom: none;
+        }
+
+        .collection {
+            border: 1px solid #F4A550;
+        }
+        /* This container class will allow a table to scroll horizontally on smaller screens. */
+        .hscroll {
+            overflow-x: auto; /* Horizontal */
+        }
+    </style>
+
+
+    <nav >
+        <div style="padding: 0 10px !important" class="nav-wrapper black">
+            <a href="/encargadoDeTaller" class="brand-logo">Encargado de taller</a>
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a  class="btn-small orange darken-2" href="/encargadoDeTaller/mostrarFormularioAltaDeService">Cargar Service</a></li>
+
+                <li><a  class="btn-small orange darken-2" href="/encargadoDeTaller/traerTodosLosService">Listar todos los Service</a></li>
+                <li><a  class="btn-small red darken-2" href="/encargadoDeTaller/cerrarSesion">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav black" id="mobile-demo">
+        <li><a  class="btn orange darken-2" href="/encargadoDeTaller/mostrarFormularioAltaDeService">Cargar Service</a></li>
+        <li><a  class="btn orange darken-2" href="/encargadoDeTaller/traerTodosLosService">Listar todos los Service</a></li>
+        <li><a  class="btn red darken-2" href="/encargadoDeTaller/cerrarSesion">Cerrar sesión</a></li>
+    </ul>
+
+
+    </header>
+{{/encargadoDeTaller}}

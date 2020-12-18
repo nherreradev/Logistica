@@ -1,0 +1,29 @@
+body {
+    background-color: #b0a9a9;
+    color: #fff;
+}
+
+.login {
+    margin-top: 100px;
+}
+
+.login .card {
+    background: rgba(0, 0, 0, .6);
+}
+
+.login label {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.login input {
+    font-size: 22px !important;
+}
+
+.login button:hover {
+    padding: 0px 40px;
+}
+
+.login p {
+    margin-top: 1em;
+}
